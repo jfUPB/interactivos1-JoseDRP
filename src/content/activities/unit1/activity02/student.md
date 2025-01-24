@@ -8,5 +8,6 @@ Los dispositivos de entrada incluirían controladores VR, sensores de movimiento
 física sería clave, permitiendo que las acciones en el mundo real, como mover objetos o presionar botones, tengan consecuencias en el juego digital.
 Los problemas potenciales incluirían la sincronización entre los mundos físico y virtual, la complejidad técnica de integrar diversas tecnologías, y la accesibilidad, ya que algunos jugadores podrían sentirse incómodos con la 
 VR. Además, se necesitaría un espacio adecuado para implementar la experiencia.
+
 Este proyecto se conecta con los conceptos del curso de diseño de entretenimiento digital, al explorar cómo combinar interacción física y digital para crear experiencias inmersivas, aprovechando dispositivos de entrada y salida 
 para mejorar la participación del usuario y la sensación de inmersión.
