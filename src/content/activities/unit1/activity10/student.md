@@ -1,6 +1,6 @@
 #### Desarrollo actividad 10
 
-- Para solucionar esta línea de código, lo primero fue leer detenidamente el problema. Recordé que en una actividad anterior hicimos algo muy similar. Estos eran los códigos
+- Para solucionar esta línea de código, lo primero fue leer detenidamente el problema. Recordé que en una actividad anterior hicimos algo muy similar. Estos eran los códigos:
 
 ```py
   from microbit import *
