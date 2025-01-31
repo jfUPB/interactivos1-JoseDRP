@@ -87,3 +87,5 @@ function sendBtnClick() {
 ```
 
 - Por lo tanto, usé ambos códigos para configurar la tarjeta micro:bit y solo necesitaba cambiar el círculo por el cuadrado que nos piden. Para esto, analicé el código y pedí ayuda a chatGPT. Me dijo que lo que controlaba la forma del polígono mostrado en pantalla era la función ellipse(), y que solo era necesario cambiarla por rect(). Finalmente, hice estos cambios y funcionó correctamente. Este fue el código final:
+
+- [Enlace al proyecto](https://editor.p5js.org/JoseDRP/sketches/M1pVvUijI)
