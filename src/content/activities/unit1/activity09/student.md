@@ -42,5 +42,17 @@ function setup() {
 
 ![image](../../../../assets/u1-a9-i1.png)
 
+- El código funcionó correctamente como se puede ver, por lo que finalmente le pedí a ChatGPT que me explicara básicamente línea por línea para entender su funcionamiento
 
- 
+##### Explicación del código:
+**setup():** Se establece un lienzo de 400x400 píxeles y se elimina el relleno de las figuras para dibujar solo los bordes.
+
+**draw():** Se ejecuta repetidamente para actualizar los patrones. En cada frame, se dibujan 10 círculos.
+
+###### Cálculos de posición y tamaño:
+
+Utilizamos la función sin() y cos() para calcular la posición de cada círculo, creando un patrón circular dinámico.
+sin(frameCount * 0.01 + i) y cos(angle) modifican la posición y el radio de los círculos.
+
+El frameCount hace que los círculos se muevan con el tiempo, creando un patrón animado.
+Colores aleatorios: Cada círculo tiene un color de trazo aleatorio que cambia en cada ciclo de dibujo.
