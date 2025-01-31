@@ -88,4 +88,66 @@ function sendBtnClick() {
 
 - Por lo tanto, usé ambos códigos para configurar la tarjeta micro:bit y solo necesitaba cambiar el círculo por el cuadrado que nos piden. Para esto, analicé el código y pedí ayuda a chatGPT. Me dijo que lo que controlaba la forma del polígono mostrado en pantalla era la función ellipse(), y que solo era necesario cambiarla por rect(). Finalmente, hice estos cambios y funcionó correctamente. Este fue el código final:
 
-- [Enlace al proyecto](https://editor.p5js.org/JoseDRP/sketches/M1pVvUijI)
+[Enlace al proyecto](https://editor.p5js.org/JoseDRP/sketches/M1pVvUijI)
+
+```js
+let port;
+let connectBtn;
+
+function setup() {
+    createCanvas(400, 400);
+    background(220);
+    port = createSerial();
+    connectBtn = createButton('Connect to micro:bit');
+    connectBtn.position(80, 300);
+    connectBtn.mousePressed(connectBtnClick);
+    let sendBtn = createButton('Send Love');
+    sendBtn.position(220, 300);
+    sendBtn.mousePressed(sendBtnClick);
+    fill('white');
+    // Aquí cambiamos el círculo por un cuadrado
+    rectMode(CENTER); // Asegura que el rectángulo se dibuje centrado en las coordenadas
+    rect(width / 2, height / 2, 100, 100); // Dibuja un cuadrado
+}
+
+function draw() {
+
+    if (port.availableBytes() > 0) {
+        let dataRx = port.read(1);
+        if (dataRx == 'A') {
+            fill('red');
+        }
+        else if (dataRx == 'B') {
+            fill('yellow');
+        }
+        else {
+            fill('green');
+        }
+        background(220);
+        
+        // Aquí cambiamos el círculo por un cuadrado
+        rect(width / 2, height / 2, 100, 100); // Dibuja un cuadrado
+        fill('black');
+        text(dataRx, width / 2, height / 2);
+    }
+
+    if (!port.opened()) {
+        connectBtn.html('Connect to micro:bit');
+    }
+    else {
+        connectBtn.html('Disconnect');
+    }
+}
+
+function connectBtnClick() {
+    if (!port.opened()) {
+        port.open('MicroPython', 115200);
+    } else {
+        port.close();
+    }
+}
+
+function sendBtnClick() {
+    port.write('h');
+}
+```
