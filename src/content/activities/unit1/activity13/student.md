@@ -1,0 +1,5 @@
+##### Reflexión de la unidad
+
+- En términos generales, la unidad me pareció sencilla. Supe darle gran uso al diseño generativo pero también a aplicar ciertas estrategias con las herramientas dadas para solucionar punto por punto en la unidad. La parte más fácil fueron los primeros puntos (1-5), ya que era fases de exploración que solo requerían de leer, analizar un poco y responder sin demasiado esfuerzo. Sin embargo, siento que son de gran ayuda para entrar en la dinámica del curso y de la unidad.
+
+- La parte más "difícil" fue sin duda el punto 12 de la unidad. Debido a que le tuve que dedicar más esfuerzo que a los demás; buscando soluciones a problemas y estrategias para completar la actividad. Como vimos, la dinámica que seguía en cada unidad era usar como herramienta el código dado en el punto 6, y modificarlo de acuerdo a las instrucciones dadas en cada punto, pero en este punto específicamente, se necesitaba modificarlo un poco más y analizar más cosas; así como también modificar el código de Python.  
