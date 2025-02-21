@@ -54,3 +54,5 @@ while True:
         
     sleep(100)  # Para evitar lecturas repetidas rápidas
 ```
+
+- Finalmente, le pregunté por el funcionamiento línea por línea de este código a ChatGPT para comprenderlo de una mejor manera.
